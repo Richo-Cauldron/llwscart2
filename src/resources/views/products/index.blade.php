@@ -1,5 +1,5 @@
 @extends('layouts.app_shop')
 
 @section('content')
-    <livewire:shop-front />
+    <livewire:products />
 @endsection

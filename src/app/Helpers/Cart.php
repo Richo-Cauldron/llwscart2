@@ -7,6 +7,11 @@ use App\Models\Product;
 
 class Cart
 {
+    public function getName()
+    {
+        return 'Cauldron';
+    }
+
     public function __construct()
     {
         if($this->get() === null)
