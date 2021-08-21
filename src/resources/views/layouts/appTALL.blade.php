@@ -1,4 +1,4 @@
-@extends('layouts.base_shop')
+@extends('layouts.baseTALL')
 
 @section('body')
     @yield('content')

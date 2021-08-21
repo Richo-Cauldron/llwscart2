@@ -28,8 +28,6 @@
     </head>
 
     <body>
-        @include('includes.header')
-
         @yield('body')
 
         @livewireScripts

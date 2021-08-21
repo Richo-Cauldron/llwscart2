@@ -28,6 +28,8 @@
     </head>
 
     <body>
+        @livewire('header')
+
         @yield('body')
 
         @livewireScripts

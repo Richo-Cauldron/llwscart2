@@ -2,7 +2,7 @@
 
 namespace App\Http\Livewire;
 
-use app\Facades\Cart;
+use App\Facades\Cart;
 use App\Models\Product;
 use Livewire\Component;
 use Illuminate\View\View;
@@ -33,5 +33,7 @@ class Products extends Component
     public function addToCart(int $productId): void
     {
         Cart::add(Product::where('id', $productId)->first());
+
+        $this->emit('productAdded');
     }
 }
